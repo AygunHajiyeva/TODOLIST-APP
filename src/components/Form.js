@@ -13,6 +13,7 @@ export default function Form({ todo, setTodo, todoList, setTodoList }) {
       <input
         type="text"
         placeholder="enter any todo..."
+        required
         value={todo}
         onChange={(e) => setTodo(e.target.value)}
       />
