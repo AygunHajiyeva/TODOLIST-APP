@@ -1,8 +1,6 @@
 <h1 align="center">TODO-LIST</h1>
 
-<div >
-CRUD application built with react
-</div>
+
 
 <div align="center">
 <h1>
@@ -12,7 +10,10 @@ CRUD application built with react
 </h1>
 </div>
 
-
+### Features
+<div >
+CRUD application. Users can add different types of notes. In addition, users can delete notes from the list.
+</div>
 
 ### Built With
 
