@@ -8,9 +8,9 @@ export default function({ todoList, setTodoList }) {
   };
 
   return (
-    <div>
+    <div className="todolist">
       {todoList.map((todo) => (
-        <div key={todo.id}>
+        <div key={todo.id} className="todo">
           {todo.todo}
           <button onClick={() => handleDelete(todo.id)}>
             <i class="fa-solid fa-trash"></i>

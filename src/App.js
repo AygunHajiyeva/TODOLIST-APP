@@ -8,8 +8,10 @@ export default function App() {
   const [todo, setTodo] = useState("");
   const [todoList, setTodoList] = useState([]);
   return (
-    <div>
-      <h1>Todolist</h1>
+    <div className="app">
+      <h1>Todo List</h1>
+      <p>Keep your life organized</p>
+      
       <Form
         todo={todo}
         setTodo={setTodo}
