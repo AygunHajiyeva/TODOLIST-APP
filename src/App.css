@@ -1,18 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Buhid&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: whitesmoke;
+  font-family: 'Noto Sans Buhid', sans-serif;
 }
-.app {
-  background-color: orange;
+
+body {
+  background: #0f0c29; 
+  background: -webkit-linear-gradient(
+    to right,
+    #505087,
+    #302b63,
+    #0f0c29
+  ); 
+  background: linear-gradient(
+    to right,
+    #35355b,
+    #302b63,
+    #0f0c29
+  ); 
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.app-section {
+  background: #9796f0; 
+  background: -webkit-linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); 
+  background: linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); 
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 8% auto;
+  max-width: 800px;
   width: 80vw;
   height: 60vh;
   padding: 20px;
 }
+
 h1 {
   font-size: 2.4rem;
 }
@@ -29,29 +67,58 @@ form input {
   position: relative;
   width: 400px;
   margin-right: 5px;
+  color: black;
+  background-color: #ccc2fe;
 }
 
 form input,
-form button , .todo{
-   border: none;
+form button,
+.todo {
+  border: none;
   font-size: 18px;
   padding: 5px;
 }
 
 form button {
+  background-color: #6534d1;
   width: 80px;
-cursor: pointer;
+  cursor: pointer;
+}
+
+form button:hover {
+  transform: scale(101%);
+  background-color: hwb(259 15% 49% / 0.796);
+  transition: all 0.5s ease;
 }
 
 .todolist {
-margin: 20px auto;
-  /* background-color: aqua; */
+  margin: 20px auto;
 }
 
 .todo {
-  /* background-color: purple; */
-  margin-top: 5px;
-  width:400px ;
-margin-right: 5px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #7e64ff;
+  border: none;
 
+  width: 484px;
+  margin-top: 10px;
+}
+
+.btn-section {
+  display: flex;
+  gap: 10px;
+}
+.trash i {
+  font-size: 19px;
+  color: rgb(85, 82, 82);
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
 }

@@ -8,25 +8,33 @@ export default function({ todoList, setTodoList }) {
   };
 
   const handleIsComplete = (id) => {
-    setTodoList((prevTodoList) => prevTodoList.map((item) => item.id === id ? {...item, isComplete:!item.isComplete} :item));
-    
+    setTodoList((prevTodoList) =>
+      prevTodoList.map((item) =>
+        item.id === id ? { ...item, isComplete: !item.isComplete } : item
+      )
+    );
   };
-  
 
   return (
     <div className="todolist">
       {todoList.map((todo) => (
-        <div key={todo.id} className="todo" style={todo.isComplete ? {textDecorationLine: 'line-through'}:{}}>
+        <div
+          key={todo.id}
+          className="todo"
+          style={todo.isComplete ? { textDecorationLine: "line-through", opacity:0.8 } : {}}
+        >
           {todo.todo}
-          <button onClick={() => handleDelete(todo.id)}>
-            <i class="fa-solid fa-trash"></i>
-          </button>
-          <input
-            type="checkbox"
-            value={todo.isComplete}
-            onChange={() => handleIsComplete(todo.id)}
-            
-          />
+          <div className="btn-section">
+            <input
+              type="checkbox"
+              value={todo.isComplete}
+              onChange={() => handleIsComplete(todo.id)}
+              className="checkbox"
+            />
+            <button className="trash" onClick={() => handleDelete(todo.id)}>
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
         </div>
       ))}
     </div>

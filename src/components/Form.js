@@ -12,7 +12,7 @@ export default function Form({ todo, setTodo, todoList, setTodoList }) {
     <form onSubmit={addTodoList}>
       <input
         type="text"
-        placeholder="enter any todo..."
+        placeholder= "Enter any todo..."
         required
         value={todo}
         onChange={(e) => setTodo(e.target.value)}

@@ -10,15 +10,22 @@ export default function App() {
   return (
     <div className="app">
       <h1>Todo List</h1>
+
       <p>Keep your life organized</p>
-      
-      <Form
-        todo={todo}
-        setTodo={setTodo}
-        todoList={todoList}
-        setTodoList={setTodoList}
-      />
-      <TodoList todo={todo} setTodo={setTodo} todoList={todoList} setTodoList={setTodoList} />
+      <section className="app-section">
+        <Form
+          todo={todo}
+          setTodo={setTodo}
+          todoList={todoList}
+          setTodoList={setTodoList}
+        />
+        <TodoList
+          todo={todo}
+          setTodo={setTodo}
+          todoList={todoList}
+          setTodoList={setTodoList}
+        />
+      </section>
     </div>
   );
 }
