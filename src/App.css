@@ -44,11 +44,13 @@ cursor: pointer;
 }
 
 .todolist {
-
-  background-color: aqua;
+margin: 20px auto;
+  /* background-color: aqua; */
 }
 
 .todo {
+  /* background-color: purple; */
+  margin-top: 5px;
   width:400px ;
 margin-right: 5px;
 
