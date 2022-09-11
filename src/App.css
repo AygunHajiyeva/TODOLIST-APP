@@ -1,26 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Buhid&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Buhid&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: whitesmoke;
-  font-family: 'Noto Sans Buhid', sans-serif;
+  font-family: "Noto Sans Buhid", sans-serif;
 }
 
 body {
-  background: #0f0c29; 
-  background: -webkit-linear-gradient(
-    to right,
-    #505087,
-    #302b63,
-    #0f0c29
-  ); 
-  background: linear-gradient(
-    to right,
-    #35355b,
-    #302b63,
-    #0f0c29
-  ); 
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #505087, #302b63, #0f0c29);
+  background: linear-gradient(to right, #35355b, #302b63, #0f0c29);
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -30,17 +20,9 @@ body {
   text-align: center;
 }
 .app-section {
-  background: #9796f0; 
-  background: -webkit-linear-gradient(
-    to right,
-    #fbc7d4,
-    #9796f0
-  ); 
-  background: linear-gradient(
-    to right,
-    #fbc7d4,
-    #9796f0
-  ); 
+  background: #9796f0;
+  background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);
+  background: linear-gradient(to right, #fbc7d4, #9796f0);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,32 +104,26 @@ form button:hover {
   cursor: pointer;
 }
 
-
 @media all and (max-width: 768px) {
- .app-section {
-  width: 90vw;
-padding: 20px;
- }
+  .app-section {
+    width: 90vw;
+    padding: 20px;
+  }
 
   form input {
     margin: 0;
     width: 80vw;
     max-width: 398px;
-
   }
 
   form button {
-   
     margin-top: 8px;
     width: 80vw;
     max-width: 398px;
-   
   }
 
   .todo {
     width: 78vw;
     max-width: 398px;
-   
   }
-
- }
+}
