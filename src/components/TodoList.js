@@ -15,6 +15,14 @@ export default function({ todoList, setTodoList }) {
     );
   };
 
+  const handleEdit = (id) => {
+    setTodoList((prevTodoList) =>
+      prevTodoList.map((item) =>
+        
+      )
+    );
+  };
+
   return (
     <div className="todolist">
       {todoList.map((todo) => (
@@ -33,6 +41,9 @@ export default function({ todoList, setTodoList }) {
             />
             <button className="trash" onClick={() => handleDelete(todo.id)}>
               <i class="fa-solid fa-trash"></i>
+            </button>
+            <button className="edit-btn" onClick={()=>handleEdit(todo.id)}>
+              edit
             </button>
           </div>
         </div>
